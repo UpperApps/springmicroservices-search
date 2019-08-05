@@ -1,10 +1,7 @@
 package com.brownfield.pss.search.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.logging.Logger;
-
+import com.brownfield.pss.search.component.SearchComponent;
+import com.brownfield.pss.search.entity.Flight;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -14,8 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.brownfield.pss.search.component.SearchComponent;
-import com.brownfield.pss.search.entity.Flight;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Logger;
 
 @CrossOrigin
 @RefreshScope
