@@ -26,7 +26,7 @@ class SearchRestController {
     private SearchComponent searchComponent;
     @Value("${originairports.shutdown}")
     private String originAirportShutdownList;
-    private Logger logger = LoggerFactory.getLogger(SearchRestController.class);
+    private final Logger logger = LoggerFactory.getLogger(SearchRestController.class);
 
     @Autowired
     public SearchRestController(SearchComponent searchComponent){
